@@ -28,21 +28,10 @@ int main(void)
             phone.addContact();
         else if (command == "SEARCH" || command == "search")
         {
-            /* std::cout << "What is the name?" << std::endl;
-            std::cin >> name;
-            if (name == cont.getFirstname())
-            {
-                std::cout << "---------------------------" << std::endl;
-                std::cout << "   NAME: ";
-                std::cout << cont.getFirstname() << " ";
-                std::cout << cont.getLastname() << std::endl;
-                std::cout << "   PHONE: ";
-                std::cout << cont.getPhonenumber() << std::endl;
-                std::cout << "---------------------------" << std::endl;
-            } */
             phone.findContact();
+            continue;
         }
-        else if (command == "EXIT" | command == "exit")
+        else if (command == "EXIT" || command == "exit")
         {
             std::cout << "Valeu Falou!" << std::endl;
             break;

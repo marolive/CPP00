@@ -15,4 +15,6 @@ private:
     Contact contact[8];
 };
 
+int mini_atoi(std::string str);
+
 #endif
