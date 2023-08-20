@@ -38,7 +38,7 @@ int main(void)
         {
             std::cout << " _______________________________ " << std::endl;
             std::cout << "|                               |" << std::endl;
-            std::cout << "| ONLY ADD OR SEARCH OR EXIT !! |" << std::endl;
+            std::cout << "| JUST ADD or SEARCH or EXIT !! |" << std::endl;
             std::cout << "|_______________________________|" << std::endl;
             std::cout << std::endl;
         }
