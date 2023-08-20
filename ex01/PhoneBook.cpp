@@ -50,7 +50,7 @@ void PhoneBook::addContact(void)
     this->contact[this->index] = cont;
     this->index++;
     this->count++;
-    if (this->index > 3)
+    if (this->index > 8)
     {
         this->count = this->index - 1;
         this->index = 1;
