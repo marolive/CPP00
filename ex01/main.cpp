@@ -22,25 +22,23 @@ int main(void)
 
     while (42)
     {
-        std::cout << "Please, put a command (ADD or SEARCH or EXIT)" << std::endl;
+        std::cout << "Please, put a command (ADD or SEARCH or EXIT): ";
         std::cin >> command;
-        if (command =="ADD" or command =="add")
+        if (command =="ADD")
             phone.addContact();
-        else if (command == "SEARCH" || command == "search")
-        {
+        else if (command == "SEARCH")
             phone.findContact();
-            continue;
-        }
-        else if (command == "EXIT" || command == "exit")
+        else if (command == "EXIT")
         {
-            std::cout << "Valeu Falou!" << std::endl;
+            std::cout << std::endl;
+            std::cout << "FINISH..." << std::endl;
             break;
         }
         else
         {
             std::cout << " _______________________________ " << std::endl;
             std::cout << "|                               |" << std::endl;
-            std::cout << "| VOCÊ É RETARDADO POR ACASO ?? |" << std::endl;
+            std::cout << "| ONLY ADD OR SEARCH OR EXIT !! |" << std::endl;
             std::cout << "|_______________________________|" << std::endl;
             std::cout << std::endl;
         }

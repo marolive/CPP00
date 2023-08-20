@@ -12,9 +12,11 @@ public:
     void findContact(void);
 private:
     int     index;
+    int     count;
     Contact contact[8];
 };
 
+std::string truncate(std::string str, size_t len);
 int mini_atoi(std::string str);
 
 #endif
