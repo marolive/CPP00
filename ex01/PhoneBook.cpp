@@ -70,7 +70,11 @@ void PhoneBook::findContact(void)
     int number;
     int i = 0;
 
+
     std::cout << " ___________________________________________" << std::endl;
+    std::cout << "|_/\\_*__/\\_*__/\\_ PHONEBOOK __/\\_*_/\\__*_/\\_|" << std::endl;
+    //std::cout << "|-------------------------------------------|" << std::endl;
+    std::cout << "|___________________________________________|" << std::endl;
     std::cout << "|" << std::setw(10) << "INDEX" << "|" << std::setw(10) << "FIRSTNAME" << "|";
     std::cout << std::setw(10) << "LASTNAME" << "|" << std::setw(10) << "NICKNAME" << "|" << std::endl;
     std::cout << "|----------|----------|----------|----------|" << std::endl;
@@ -81,6 +85,7 @@ void PhoneBook::findContact(void)
         std::cout << truncate(this->contact[i].getLastname(), this->contact[i].getLastname().length()) << "|" << std::setw(10) << truncate(this->contact[i].getNickname(), this->contact[i].getNickname().length());
         std::cout << "|" << std::endl;
     }
+   // std::cout << "|___________________________________________|" << std::endl;
     std::cout << " -------------------------------------------" << std::endl;
     std::cout << "CHOOSE AN INDEX: ";
     getline(std::cin >> std::ws, num);
@@ -107,7 +112,8 @@ void PhoneBook::findContact(void)
         std::cout << "Index: " << number << std::endl;
         std::cout << "First Name: " << this->contact[number].getFirstname() << std::endl;
         std::cout << "Last Name : " << this->contact[number].getLastname() << std::endl;
-        std::cout << "Nick Name : " << this->contact[number].getNickname() << std::endl;
+        std::cout << "Number Phone : " << this->contact[number].getPhonenumber() << std::endl;
+        std::cout << "DarkestSecret : " << this->contact[number].getDarkestsecret() << std::endl;
         std::cout << std::endl;
     }
 }

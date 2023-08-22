@@ -31,7 +31,7 @@ int main(void)
         else if (command == "EXIT")
         {
             std::cout << std::endl;
-            std::cout << "FINISH..." << std::endl;
+            std::cout << "PHONEBOOK CLOSED..." << std::endl;
             break;
         }
         else
