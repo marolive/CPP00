@@ -6,7 +6,7 @@
 /*   By: marolive <marolive@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 15:05:31 by marolive          #+#    #+#             */
-/*   Updated: 2023/08/17 19:38:52 by marolive         ###   ########.fr       */
+/*   Updated: 2023/08/23 12:32:58 by marolive         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int main(void)
         }
         else
         {
+            std::cout << std::endl;
             std::cout << " _______________________________ " << std::endl;
             std::cout << "|                               |" << std::endl;
             std::cout << "| JUST ADD or SEARCH or EXIT !! |" << std::endl;

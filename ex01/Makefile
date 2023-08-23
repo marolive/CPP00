@@ -6,7 +6,7 @@ CC = c++
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(SCRS)
 		$(CC) $(CFLAGS) $(SCRS) -o $(NAME)
 
 clean:

@@ -6,7 +6,7 @@
 /*   By: marolive <marolive@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 09:59:45 by marolive          #+#    #+#             */
-/*   Updated: 2023/08/17 20:34:51 by marolive         ###   ########.fr       */
+/*   Updated: 2023/08/23 13:44:41 by marolive         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,10 @@ void PhoneBook::addContact(void)
 
     this->contact[this->index] = cont;
     this->index++;
-    this->count++;
+    if(this->count < this->index - 1)
+        this->count++;
     if (this->index > 8)
-    {
-        this->count = this->index - 1;
         this->index = 1;
-    }
 }
 
 std::string truncate(std::string str, size_t len)
@@ -72,8 +70,7 @@ void PhoneBook::findContact(void)
 
 
     std::cout << " ___________________________________________" << std::endl;
-    std::cout << "|_/\\_*__/\\_*__/\\_ PHONEBOOK __/\\_*_/\\__*_/\\_|" << std::endl;
-    //std::cout << "|-------------------------------------------|" << std::endl;
+    std::cout << "|_/\\_*__/\\_*__/\\_ PHONEBOOK _/\\__*_/\\__*_/\\_|" << std::endl;
     std::cout << "|___________________________________________|" << std::endl;
     std::cout << "|" << std::setw(10) << "INDEX" << "|" << std::setw(10) << "FIRSTNAME" << "|";
     std::cout << std::setw(10) << "LASTNAME" << "|" << std::setw(10) << "NICKNAME" << "|" << std::endl;
@@ -85,7 +82,6 @@ void PhoneBook::findContact(void)
         std::cout << truncate(this->contact[i].getLastname(), this->contact[i].getLastname().length()) << "|" << std::setw(10) << truncate(this->contact[i].getNickname(), this->contact[i].getNickname().length());
         std::cout << "|" << std::endl;
     }
-   // std::cout << "|___________________________________________|" << std::endl;
     std::cout << " -------------------------------------------" << std::endl;
     std::cout << "CHOOSE AN INDEX: ";
     getline(std::cin >> std::ws, num);
