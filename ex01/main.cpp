@@ -6,7 +6,7 @@
 /*   By: marolive <marolive@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 15:05:31 by marolive          #+#    #+#             */
-/*   Updated: 2023/08/23 12:32:58 by marolive         ###   ########.fr       */
+/*   Updated: 2023/08/23 19:30:56 by marolive         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ int main(void)
     {
         std::cout << "Please, put a command (ADD or SEARCH or EXIT): ";
         std::cin >> command;
+        if(std::cin.eof())
+            return 0;
         if (command =="ADD")
             phone.addContact();
         else if (command == "SEARCH")
