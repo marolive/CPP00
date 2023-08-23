@@ -6,7 +6,7 @@
 /*   By: marolive <marolive@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 13:23:19 by marolive          #+#    #+#             */
-/*   Updated: 2023/05/31 18:07:55 by marolive         ###   ########.fr       */
+/*   Updated: 2023/08/23 18:59:47 by marolive         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
                 std::cout << (char)toupper(str.at(j++));
             i++;
         }
+	    std::cout << std::endl;
     }
     else
-        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
+        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 }
