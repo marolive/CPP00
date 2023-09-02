@@ -13,7 +13,7 @@ public:
 private:
     int     index;
     int     count;
-    Contact contact[8];
+    Contact contact[9];
 };
 
 std::string truncate(std::string str, size_t len);
